@@ -1,0 +1,11 @@
+ipython
+altair
+dash
+dash-bootstrap-components
+ipywidgets
+matplotlib
+numpy
+pandas
+plotly
+seaborn
+yfinance
