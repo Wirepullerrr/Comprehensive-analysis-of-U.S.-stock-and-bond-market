@@ -24,7 +24,7 @@
 ---
 
 ## Introduction
-This project explores how the **S&P 500 ETF (SPY)** and the **iShares 7-10 Year Treasury Bond ETF (IEF)** behave individually and relative to each other across different market conditions. The analysis includes:
+This project explores how the **S&P 500 ETF (SPY)** and the **iShares 7-10 Year Treasury Bond ETF (IEF)** behave individually and relative to each other across different market conditions. [From 2002 to Now]. The analysis includes:
 
 - Short-term daily fluctuations and long-term growth trends.
 - Changes in correlation and volatility during market stress (e.g., 2008 Financial Crisis, COVID-19) and bull markets.
