@@ -1,6 +1,6 @@
 # Comprehensive Analysis of US Stocks (SPY) and Bonds (IEF)
 
-**Author(s):** [Zun Cao, Joylyn Qiao]  
+## **Author(s):** [**Zun Cao**, **Joylyn Qiao**]  
 **Project Goal:** Provide an in-depth analysis of the relationship between the US Stock Market (via SPY) and the US Bond Market (via IEF), and to offer an interactive tool to visualize potential investment outcomes.
 
 ---
@@ -80,10 +80,10 @@ This project explores how the **S&P 500 ETF (SPY)** and the **iShares 7-10 Year 
 
 ## Project Structure
 
-.
-├── notebooks/              # Jupyter notebooks for exploratory analysis
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation (this file)
+.<br>
+├── notebooks               # Jupyter notebooks for exploratory analysis <br>
+├── requirements.txt        # Python dependencies <br>
+├── README.md               # Project documentation (this file) <br>
 └── ...
 
 
