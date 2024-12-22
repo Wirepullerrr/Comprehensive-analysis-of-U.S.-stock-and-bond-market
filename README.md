@@ -1,63 +1,90 @@
-# Comprehensive Analysis of US Stock Market (S&P 500) and Bond Market (10-Year Treasury)
+# Comprehensive Analysis of US Stocks (SPY) and Bonds (IEF)
 
-This project systematically compares the performance and relationship between the US stock market (S&P 500) and the bond market (10-Year Treasury). By analyzing daily returns, volatility, correlations, and risk-adjusted performance metrics, the study aims to provide actionable insights into portfolio diversification and macroeconomic dynamics.
-
----
-
-## Key Features
-
-### 1. **Data Analysis and Visualization**
-- **Daily Returns Analysis**: Highlights price changes over time.
-- **Volatility Trends**: Examines market risk through rolling volatility.
-- **Correlation Dynamics**: Assesses the relationship between stocks and bonds, particularly during economic crises.
-- **Risk-Adjusted Metrics**: Calculates Sharpe and Sortino Ratios for a deeper understanding of performance.
-- **Forecasting with ARIMA**: Offers predictive insights into future trends.
-
-### 2. **Interactive Visualizations**
-- **Tools Used**: Plotly, Altair, and Seaborn for dynamic and engaging charts.
-- **Interactivity**: Includes hover tools, zoom, range sliders, and allocation adjustment sliders.
-
-### 3. **Portfolio Diversification Insights**
-- Simulates dynamic stock-bond allocation to demonstrate risk-return tradeoffs.
+**Author(s):** [Zun Cao, Joylyn Qiao]  
+**Project Goal:** Provide an in-depth analysis of the relationship between the US Stock Market (via SPY) and the US Bond Market (via IEF), and to offer an interactive tool to visualize potential investment outcomes.
 
 ---
 
-## Datasets
-
-### **S&P 500**
-- **Data Source**: Historical daily stock market data.
-- **Metrics**: Open, Close, High, Low prices in USD.
-
-### **10-Year Treasury**
-- **Data Source**: Daily bond yield records.
-- **Metrics**: Percentage yield (% per annum).
-
----
-
-## Analysis Highlights
-
-### **Returns and Volatility**
-- Stocks are more volatile than bonds, particularly during crises like the COVID-19 crash.
-- Bonds offer stable returns and act as a buffer during market downturns.
-
-### **Correlation Analysis**
-- Stock-bond correlations are generally low, turning negative during economic stress, indicating a hedge relationship.
-
-### **Risk-Adjusted Performance**
-- Stocks have higher upside potential but greater downside risks.
-- Bonds consistently deliver stable risk-adjusted returns.
-
-### **Portfolio Diversification**
-- Mixed portfolios provide balanced growth with reduced risk, ideal during volatile periods.
+## Table of Contents
+1. [Introduction](#introduction)  
+2. [Key Analyses](#key-analyses)  
+   - [Daily Returns](#daily-returns)  
+   - [Cumulative Returns](#cumulative-returns)  
+   - [Rolling Correlation](#rolling-correlation)  
+   - [Rolling Volatility](#rolling-volatility)  
+   - [Sharpe & Sortino Ratios](#sharpe--sortino-ratios)  
+   - [Seasonality Analysis](#seasonality-analysis)  
+3. [Interactive Investment Tool](#interactive-investment-tool)  
+4. [Project Structure](#project-structure)  
+5. [Setup & Usage](#setup--usage)  
+6. [Strengths & Challenges](#strengths--challenges)  
+7. [Further Improvements](#further-improvements)  
+8. [Acknowledgments](#acknowledgments)
 
 ---
 
-## Tools and Libraries
+## Introduction
+This project explores how the **S&P 500 ETF (SPY)** and the **iShares 7-10 Year Treasury Bond ETF (IEF)** behave individually and relative to each other across different market conditions. The analysis includes:
 
-- **Programming**: Python
-- **Libraries**: `pandas`, `NumPy`, `Matplotlib`, `Seaborn`, `Plotly`, `Altair`
-- **Statistical Models**: ARIMA forecasting for predictive analysis.
+- Short-term daily fluctuations and long-term growth trends.
+- Changes in correlation and volatility during market stress (e.g., 2008 Financial Crisis, COVID-19) and bull markets.
+- Risk-adjusted measures (Sharpe and Sortino Ratios) to see how investors are compensated for risk.
+- Seasonal patterns highlighting which months favor either stocks or bonds.
+- An interactive **investment simulation tool** for exploring hypothetical outcomes based on user inputs.
 
 ---
+
+## Key Analyses
+
+### Daily Returns
+- **What We Did**: Compared day-to-day percentage changes in SPY and IEF.  
+- **Why It Matters**: Highlights short-term volatility and the difference in daily risk levels between stocks and bonds.
+
+### Cumulative Returns
+- **What We Did**: Calculated compounded growth to reveal total returns over time for each asset.  
+- **Why It Matters**: Demonstrates how a long-term investment in stocks vs. bonds could grow your capital.
+
+### Rolling Correlation
+- **What We Did**: Used a rolling window (e.g., 30 days) to measure how SPY and IEF returns move in relation to each other.  
+- **Why It Matters**: Correlation can shift over time; during crises, it may turn negative (bonds acting as a hedge), while in stable times, it may be positive or low.
+
+### Rolling Volatility
+- **What We Did**: Analyzed how each asset’s volatility (risk) changes over time using a rolling window.  
+- **Why It Matters**: Identifies periods of high uncertainty (e.g., 2008, COVID-19) and helps compare risk levels between stocks and bonds.
+
+### Sharpe & Sortino Ratios
+- **What We Did**: Computed rolling 6-month Sharpe and Sortino Ratios for both SPY and IEF.  
+- **Why It Matters**:
+  - **Sharpe Ratio**: Measures total volatility against returns.  
+  - **Sortino Ratio**: Focuses on downside (negative) risk.  
+  Both show how efficiently an asset’s returns compensate for risk.
+
+### Seasonality Analysis
+- **What We Did**: Analyzed average monthly returns to discover seasonal patterns for stocks and bonds.  
+- **Why It Matters**: Reveals recurring trends—certain months typically see better returns for stocks or bonds (e.g., SPY in April, July, November).
+
+---
+
+## Interactive Investment Tool
+
+- **Description**: A Dash-based application enabling users to:
+  1. Input an investment amount (e.g., \$1,000).
+  2. Select an investment duration (1 to 20 years).
+  3. Choose assets (SPY, IEF, or both).
+- **Purpose**:
+  - Provides a historical simulation of how the investment could have grown.
+  - Displays both a growth chart and final values/returns.
+- **Significance**: Allows exploration of the benefits of diversification and helps users understand how different allocations might have performed historically.
+
+---
+
+## Project Structure
+
+.
+├── notebooks/              # Jupyter notebooks for exploratory analysis
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation (this file)
+└── ...
+
 
 
